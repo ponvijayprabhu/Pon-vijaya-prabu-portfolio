@@ -450,8 +450,25 @@
           <a class="btn" href="#projects">Projects</a>
           <a class="btn" href="#about">About</a>
           <a class="btn" href="#contact">Contact</a>
-          <a class="btn" href="Pon Vijaya Prabu Resume.pdf" id="downloadResume"
-            download>Resume</a>
+         <a class="btn" href="#e" id="downloadResume">Resume</a>
+
+<script>
+document.getElementById('downloadResume').addEventListener('click', (e) => {
+  e.preventDefault();
+
+  // Path to your resume file
+  const resumeUrl = 'Pon Vijaya Prabu Resume.pdf'; // e.g., put resume.pdf inside "files" folder
+
+  // Create a hidden <a> element to trigger download
+  const link = document.createElement('a');
+  link.href = resumeUrl;
+  link.download = 'Pon Vijaya Prabu Resume.pdf'; // The downloaded file name
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
+</script>
+
 
         </nav>
       </header>
