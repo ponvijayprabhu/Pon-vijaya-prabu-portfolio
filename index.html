@@ -486,6 +486,7 @@ document.getElementById('downloadResume').addEventListener('click', (e) => {
             <a class="btn"
               href="https://www.linkedin.com/in/pon-vijay-prabhu3774?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn" href="#contactHead">Contact info</a>
           </div>
 
           <div style="display:flex; gap:12px; margin-top:18px; align-items:center">
@@ -658,6 +659,43 @@ document.getElementById('downloadResume').addEventListener('click', (e) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Form</title>
         <!-- Your CSS here -->
+         <section class="card fade-up" aria-labelledby="contactHead">
+  <div class="section-title">
+    <h3 id="contactHead">Contact Info</h3>
+    <div class="muted">Get in touch with me</div>
+  </div>
+
+  <div class="contact-info">
+    <div class="info-item">
+      <strong>Email:</strong> 
+      <a href="mailto:ponvijayprabhu@gmail.com">ponvijayprabhu@gmail.com</a>
+    </div>
+    <div class="info-item">
+      <strong>Phone:</strong> 
+      <a href="tel:+916382059153">+91 6382059153</a>
+    </div>
+    <div class="info-item">
+      <strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/ponvijayprabu" target="_blank">linkedin.com/in/ponvijayprabu</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-info {
+    display: flex;
+    justify-content: space-around; /* evenly spread */
+    align-items: center;
+    flex-wrap: wrap; /* wrap on small screens */
+    gap: 20px; /* spacing between items */
+    margin-top: 15px;
+  }
+
+  .info-item {
+    white-space: nowrap; /* prevent breaking into two lines */
+  }
+</style>
+
       </head>
 
       <body>
